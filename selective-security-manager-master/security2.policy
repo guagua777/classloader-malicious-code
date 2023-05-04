@@ -1,0 +1,13 @@
+grant codebase "file:${user.dir}/out/production/selective-security-manager-master/" {
+    // permission java.security.AllPermission;
+    permission demo.ToggleSecurityManagerPermission;
+};
+
+//grant codebase "file:${user.dir}/out/production/selective-security-manager-master/outcode/" {
+    // permission demo.ToggleSecurityManagerPermission;
+//};
+
+
+
+//https://blog.csdn.net/owisho_java/article/details/129311580
+//文件中的codeBase要格外注意：一定要是xxx.class文件所在的目录或者jar文件

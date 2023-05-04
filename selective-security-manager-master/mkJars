@@ -1,0 +1,13 @@
+#! /bin/sh
+
+if [ ! -e bin ]
+then
+  mkdir bin
+fi
+
+javac -d bin src/demo/*.java
+
+cd bin
+jar cvf ../securitymanager.jar demo/SelectiveSecurityManager*.class demo/Test*.class demo/ToggleSecurityManagerPermission.class
+jar cvf ../untrusted.jar demo/UntrustedCode.class
+cd ..

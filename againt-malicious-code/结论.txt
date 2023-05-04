@@ -1,0 +1,8 @@
+1. 使用单独的线程运行不信任的代码
+2. 使用自定义的classloader加载该代码
+
+https://stackoverflow.com/questions/502218/sandbox-against-malicious-code-in-a-java-application
+
+使用classloader加载不信任代码
+https://www.cnpython.com/java/468020
+
